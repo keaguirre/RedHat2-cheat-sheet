@@ -352,8 +352,8 @@ passwd root y te pedira la nueva password
         showmount -e 192.168.6.2 #para revisar que recursos esta compartiendo ese host
         mkdir -pv /mounted/recurso1
         mkdir -pv /mounted/recurso2
-        sudo mount -f nfs 192.168.6.2:/shared/recurso1 /mounted/recurso1
-        sudo mount -f nfs 192.168.6.2:/shared/recurso2 /mounted/recurso2
+        sudo mount -t nfs 192.168.6.2:/shared/recurso1 /mounted/recurso1
+        sudo mount -t nfs 192.168.6.2:/shared/recurso2 /mounted/recurso2
         ls /mounted
 
 # Apache
